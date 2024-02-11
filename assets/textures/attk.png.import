@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cdmtoocdajcd4"
+path="res://.godot/imported/attk.png-06329afca3a7e438b524581e4bff4ff3.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/attk.png"
+dest_files=PackedStringArray("res://.godot/imported/attk.png-06329afca3a7e438b524581e4bff4ff3.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

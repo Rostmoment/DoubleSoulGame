@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dj1xewh1jckuq"
+path="res://.godot/imported/block.png-90794077f20f0819af3fea0cd0227a19.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/block.png"
+dest_files=PackedStringArray("res://.godot/imported/block.png-90794077f20f0819af3fea0cd0227a19.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cfbyeqktgckju"
+path="res://.godot/imported/americos.jpg-a04e477c358a642d0df68285670bfebf.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/americos.jpg"
+dest_files=PackedStringArray("res://.godot/imported/americos.jpg-a04e477c358a642d0df68285670bfebf.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

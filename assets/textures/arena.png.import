@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cbiewvspn8gey"
+path="res://.godot/imported/arena.png-6aa23b0019a189b043f890756cfc9c11.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/arena.png"
+dest_files=PackedStringArray("res://.godot/imported/arena.png-6aa23b0019a189b043f890756cfc9c11.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

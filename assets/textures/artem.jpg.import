@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dbqdmc2nifqhu"
+path="res://.godot/imported/artem.jpg-23e9b86acac55dde1fc193c9ca313d82.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/artem.jpg"
+dest_files=PackedStringArray("res://.godot/imported/artem.jpg-23e9b86acac55dde1fc193c9ca313d82.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

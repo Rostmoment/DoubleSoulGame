@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://assets/boss/Quit_spawn.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bur1allxvc3pu" path="res://assets/textures/tile.png" id="2"]
+[ext_resource type="Script" path="res://assets/scripts/Label/quit.gd" id="3"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(56, 24)
+script = null
+
+[node name="Quit" type="Area2D"]
+rotation = -1.5708
+collision_layer = 0
+collision_mask = 16
+script = ExtResource("1")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(28, 12)
+shape = SubResource("1")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+scale = Vector2(3.5, 1.5)
+texture = ExtResource("2")
+
+[node name="Label" type="Label" parent="CollisionShape2D"]
+offset_left = -32.2407
+offset_top = -12.1285
+offset_right = 31.7593
+offset_bottom = 11.8715
+text = "Quit"
+horizontal_alignment = 1
+script = ExtResource("3")
+metadata/_edit_use_anchors_ = true
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="CollisionShape2D"]
+position = Vector2(0.0652409, 0.0523098)
+scale = Vector2(2.78892, 1.18942)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="CollisionShape2D/VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://assets/boss/chaos.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dj1xewh1jckuq" path="res://assets/textures/block.png" id="2"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(400, 32)
+script = null
+
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(400, 32)
+script = null
+
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(32.0001, 176)
+script = null
+
+[node name="Chaos" type="Path2D"]
+script = ExtResource("1")
+metadata/_edit_vertical_guides_ = [432.0, 48.0]
+metadata/_edit_horizontal_guides_ = [-32.0, -176.0]
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(16, -16)
+rotation = 3.14159
+rotates = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="PathFollow2D"]
+remote_path = NodePath("../../AnimatableBody2D")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+position = Vector2(16, -16)
+rotation = 3.14159
+collision_mask = 0
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D"]
+position = Vector2(-192.115, -8)
+scale = Vector2(26.903, 2)
+texture = ExtResource("2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="AnimatableBody2D"]
+position = Vector2(-192, 136)
+scale = Vector2(26.903, 2)
+texture = ExtResource("2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="AnimatableBody2D"]
+position = Vector2(8.00001, 64)
+scale = Vector2(1.96506, 7)
+texture = ExtResource("2")
+
+[node name="Sprite2D4" type="Sprite2D" parent="AnimatableBody2D"]
+position = Vector2(-392, 64.0001)
+scale = Vector2(1.96506, 7)
+texture = ExtResource("2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+position = Vector2(-192, -7.99997)
+shape = SubResource("1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="AnimatableBody2D"]
+position = Vector2(-192, 136)
+shape = SubResource("2")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="AnimatableBody2D"]
+position = Vector2(8.00001, 64)
+shape = SubResource("3")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="AnimatableBody2D"]
+position = Vector2(-392, 64.0001)
+shape = SubResource("3")

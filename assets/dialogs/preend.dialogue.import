@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://0tn38ijmo3xv"
+path="res://.godot/imported/preend.dialogue-a5939885db7d03c92b0074869dcc1da1.tres"
+
+[deps]
+
+source_file="res://assets/dialogs/preend.dialogue"
+dest_files=PackedStringArray("res://.godot/imported/preend.dialogue-a5939885db7d03c92b0074869dcc1da1.tres")
+
+[params]
+
+dummy_value_ignore_me=0

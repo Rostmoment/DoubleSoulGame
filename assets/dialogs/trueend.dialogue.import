@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bl3qemagfiwdo"
+path="res://.godot/imported/trueend.dialogue-0bd4f95047063d13e0e7f7e7462b89d7.tres"
+
+[deps]
+
+source_file="res://assets/dialogs/trueend.dialogue"
+dest_files=PackedStringArray("res://.godot/imported/trueend.dialogue-0bd4f95047063d13e0e7f7e7462b89d7.tres")
+
+[params]
+
+dummy_value_ignore_me=0

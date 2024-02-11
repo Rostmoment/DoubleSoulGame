@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://assets/scripts/soul_dialog.gd" id="1"]
+
+[sub_resource type="CircleShape2D" id="1"]
+radius = 9.0
+script = null
+
+[node name="DialogPoint" type="Area2D"]
+scale = Vector2(2.6, 2.6)
+collision_layer = 128
+collision_mask = 0
+script = ExtResource("1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("1")

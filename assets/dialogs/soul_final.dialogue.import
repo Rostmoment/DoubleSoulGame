@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://o64rw6tv27c8"
+path="res://.godot/imported/soul_final.dialogue-88d01610b74b2a138181927a6a6628e7.tres"
+
+[deps]
+
+source_file="res://assets/dialogs/soul_final.dialogue"
+dest_files=PackedStringArray("res://.godot/imported/soul_final.dialogue-88d01610b74b2a138181927a6a6628e7.tres")
+
+[params]
+
+dummy_value_ignore_me=0

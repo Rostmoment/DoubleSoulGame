@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://assets/final/windows_error.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://ctaw3kcnml8gi" path="res://assets/music/error.wav" id="2"]
+[ext_resource type="Texture2D" uid="uid://owwki1ll8pvf" path="res://assets/textures/Final/windows.png" id="3"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2")
+
+[node name="Windows" type="Sprite2D" parent="."]
+position = Vector2(576, 325)
+scale = Vector2(0.481111, 0.481111)
+texture = ExtResource("3")

@@ -1,0 +1,524 @@
+[gd_scene load_steps=22 format=3]
+
+[ext_resource type="Script" path="res://assets/fith/logodomy_fight.gd" id="1"]
+[ext_resource type="LabelSettings" uid="uid://grqtux8oorq6" path="res://assets/fith/text_pixel.tres" id="2"]
+[ext_resource type="FontFile" uid="uid://dffsandg8wwdg" path="res://assets/fonts/better-vcr-5.2.ttf" id="3"]
+[ext_resource type="Texture2D" uid="uid://b3upqke06vwoy" path="res://assets/textures/fith.png" id="4"]
+[ext_resource type="Script" path="res://assets/fith/lobotomy.gd" id="5"]
+[ext_resource type="AudioStream" uid="uid://dhs0gy56757pl" path="res://assets/music/FITH_REVOLVING.ogg" id="6"]
+
+[sub_resource type="Gradient" id="1"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(1, 1, 0, 1)
+script = null
+
+[sub_resource type="GradientTexture2D" id="2"]
+gradient = SubResource("1")
+script = null
+
+[sub_resource type="Animation" id="3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(278, 620)]
+}
+script = null
+
+[sub_resource type="Animation" id="4"]
+resource_name = "fight"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(278, 620), Vector2(278, 698)]
+}
+script = null
+
+[sub_resource type="Animation" id="5"]
+resource_name = "idle"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(278, 698), Vector2(278, 620)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="6"]
+_data = {
+"RESET": SubResource("3"),
+"fight": SubResource("4"),
+"idle": SubResource("5")
+}
+script = null
+
+[sub_resource type="StyleBoxFlat" id="7"]
+bg_color = Color(0.933333, 0.552941, 0.262745, 0.32549)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.933333, 0.552941, 0.262745, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+script = null
+
+[sub_resource type="StyleBoxFlat" id="8"]
+bg_color = Color(0.933333, 0.552941, 0.262745, 0.32549)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.933333, 0.552941, 0.262745, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(1, 0, 0, 0.6)
+shadow_size = 6
+script = null
+
+[sub_resource type="StyleBoxFlat" id="9"]
+bg_color = Color(0.933333, 0.552941, 0.262745, 0.32549)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.933333, 0.552941, 0.262745, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(1, 0, 0, 0.788235)
+shadow_size = 3
+script = null
+
+[sub_resource type="Animation" id="10"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Stats:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(155, -40)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(155, 60)]
+}
+script = null
+
+[sub_resource type="Animation" id="11"]
+resource_name = "walk"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Stats:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(155, -40), Vector2(155, 60)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(155, 60), Vector2(155, -40)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="12"]
+_data = {
+"RESET": SubResource("10"),
+"walk": SubResource("11")
+}
+script = null
+
+[sub_resource type="ParticleProcessMaterial" id="13"]
+lifetime_randomness = 0.25
+particle_flag_disable_z = true
+gravity = Vector3(0, 980, 0)
+scale_min = 0.3
+scale_max = 0.5
+color = Color(1, 1, 1, 0.407843)
+script = null
+
+[sub_resource type="Curve2D" id="14"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, -3.82089, 0, 0, 0, 0, -11.4626, 34.388, 0, 0, 0, 0, -22.9254, 84.0596, 0, 0, 0, 0, -38.209, 122.269, 0, 0, 0, 0, -61.1343, 149.015, 0, 0, 0, 0, -103.164, 156.657, 0, 0, 0, 0, -152.836, 156.657, 0, 0, 0, 0, -198.686, 156.657, 0, 0, 0, 0, -244.537, 149.015, 0, 0, 0, 0, -271.283, 118.448, 0, 0, 0, 0, -282.746, 84.0596, 0, 0, 0, 0, -298.03, 45.8507, 0, 0, 0, 0, -305.671, -3.82089, 0, 0, 0, 0, -301.85, -49.6716, 0, 0, 0, 0, -298.03, -103.164, 0, 0, 0, 0, -282.746, -149.015, 0, 0, 0, 0, -244.537, -187.224, 0, 0, 0, 0, -198.686, -194.865, 0, 0, 0, 0, -152.836, -198.686, 0, 0, 0, 0, -106.985, -194.865, 0, 0, 0, 0, -61.1343, -187.224, 0, 0, 0, 0, -34.3881, -152.836, 0, 0, 0, 0, -22.9254, -114.627, 0, 0, 0, 0, -3.82092, -72.597, 0, 0, 0, 0, 0, -3.82089, 0, 0, 0, 0, 7.64172, 34.388, 0, 0, 0, 0, 15.2836, 80.2387, 0, 0, 0, 0, 34.3881, 126.089, 0, 0, 0, 0, 61.1343, 149.015, 0, 0, 0, 0, 106.985, 160.477, 0, 0, 0, 0, 152.836, 160.477, 0, 0, 0, 0, 198.686, 160.477, 0, 0, 0, 0, 244.537, 149.015, 0, 0, 0, 0, 271.283, 118.448, 0, 0, 0, 0, 290.388, 84.0596, 0, 0, 0, 0, 301.85, 45.8507, 0, 0, 0, 0, 309.492, -3.82089, 0, 0, 0, 0, 305.671, -57.3134, 0, 0, 0, 0, 294.209, -103.164, 0, 0, 0, 0, 282.746, -145.194, 0, 0, 0, 0, 244.537, -187.224, 0, 0, 0, 0, 202.507, -194.865, 0, 0, 0, 0, 156.656, -198.686, 0, 0, 0, 0, 103.164, -194.865, 0, 0, 0, 0, 61.1343, -187.224, 0, 0, 0, 0, 34.3881, -149.015, 0, 0, 0, 0, 26.7462, -110.806, 0, 0, 0, 0, 7.64172, -53.4925, 0, 0, 0, 0, 0, -3.82089)
+}
+point_count = 49
+script = null
+
+[sub_resource type="RectangleShape2D" id="15"]
+size = Vector2(774, 96)
+script = null
+
+[node name="LogodomyFight" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+metadata/_edit_horizontal_guides_ = [560.0, 160.0, 64.0, 240.0]
+metadata/_edit_vertical_guides_ = [576.0, 258.0, 884.0, 416.0, 736.0]
+
+[node name="Arena2" type="Marker2D" parent="."]
+position = Vector2(596, 448)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Button" type="Control" parent="."]
+process_mode = 2
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 278.0
+offset_top = 620.0
+offset_right = 278.0
+offset_bottom = 620.0
+grow_vertical = 0
+
+[node name="ColorRect" type="ColorRect" parent="Button"]
+process_mode = 3
+layout_mode = 0
+offset_left = 328.0
+offset_top = -86.0
+offset_right = 606.0
+offset_bottom = -60.0
+color = Color(1, 0, 0, 1)
+
+[node name="HpBar" type="TextureProgressBar" parent="Button"]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 328.0
+offset_top = -86.0
+offset_right = 392.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4.344, 0.405)
+value = 69.0
+texture_progress = SubResource("2")
+
+[node name="HP" type="Label" parent="Button"]
+process_mode = 3
+layout_mode = 0
+offset_left = 328.0
+offset_top = -85.0
+offset_right = 606.0
+offset_bottom = -60.0
+text = "HP"
+label_settings = ExtResource("2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Button"]
+process_mode = 3
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("6")
+}
+
+[node name="Fight" type="Button" parent="Button"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 82.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+theme_override_colors/font_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_pressed_color = Color(0.701961, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_disabled_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_outline_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("7")
+theme_override_styles/hover = SubResource("8")
+theme_override_styles/pressed = SubResource("9")
+theme_override_styles/disabled = SubResource("7")
+theme_override_styles/focus = SubResource("7")
+text = "FIGHT"
+
+[node name="Stats" type="Button" parent="Button"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 155.0
+offset_top = -40.0
+offset_right = 257.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+theme_override_colors/font_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_pressed_color = Color(0.701961, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_disabled_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_outline_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("7")
+theme_override_styles/hover = SubResource("8")
+theme_override_styles/pressed = SubResource("9")
+theme_override_styles/disabled = SubResource("7")
+theme_override_styles/focus = SubResource("7")
+text = "???"
+
+[node name="Secret" type="Button" parent="Button"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 155.0
+offset_top = 60.0
+offset_right = 257.0
+offset_bottom = 107.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+theme_override_colors/font_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_pressed_color = Color(0.701961, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_disabled_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_outline_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("7")
+theme_override_styles/hover = SubResource("8")
+theme_override_styles/pressed = SubResource("9")
+theme_override_styles/disabled = SubResource("7")
+theme_override_styles/focus = SubResource("7")
+text = "!!!"
+
+[node name="LinkButton" type="LinkButton" parent="Button/Secret"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -2.0
+offset_right = 105.0
+offset_bottom = 50.0
+underline = 2
+uri = "https://youtu.be/dQw4w9WgXcQ?si=t2OJA1x654IkbUk_"
+
+[node name="Heal" type="Button" parent="Button"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 329.0
+offset_top = -40.0
+offset_right = 431.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+theme_override_colors/font_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_pressed_color = Color(0.701961, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_disabled_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_outline_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("7")
+theme_override_styles/hover = SubResource("8")
+theme_override_styles/pressed = SubResource("9")
+theme_override_styles/disabled = SubResource("7")
+theme_override_styles/focus = SubResource("7")
+text = "HEAL"
+
+[node name="Quit" type="Button" parent="Button"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 504.0
+offset_top = -40.0
+offset_right = 606.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+theme_override_colors/font_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_pressed_color = Color(0.701961, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_disabled_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_colors/font_outline_color = Color(0.74902, 0.407843, 0.117647, 1)
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("7")
+theme_override_styles/hover = SubResource("8")
+theme_override_styles/pressed = SubResource("9")
+theme_override_styles/disabled = SubResource("7")
+theme_override_styles/focus = SubResource("7")
+text = "QUIT"
+
+[node name="NAME" type="Label" parent="Button"]
+process_mode = 3
+layout_mode = 0
+offset_left = -20.0
+offset_top = -85.0
+offset_right = 82.0
+offset_bottom = -60.0
+text = "NAME"
+label_settings = ExtResource("2")
+vertical_alignment = 1
+
+[node name="LVL" type="Label" parent="Button"]
+process_mode = 3
+layout_mode = 0
+offset_left = 155.0
+offset_top = -85.0
+offset_right = 257.0
+offset_bottom = -60.0
+text = "LVL 1"
+label_settings = ExtResource("2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SecretButton" type="AnimationPlayer" parent="Button"]
+process_mode = 3
+root_node = NodePath("../Secret")
+libraries = {
+"": SubResource("12")
+}
+
+[node name="CPUParticles2D" type="GPUParticles2D" parent="."]
+process_mode = 3
+modulate = Color(1, 1, 1, 0.321569)
+position = Vector2(18, 50)
+amount = 15
+process_material = SubResource("13")
+texture = ExtResource("4")
+lifetime = 2.0
+speed_scale = 2.0
+explosiveness = 0.22
+randomness = 0.29
+visibility_rect = Rect2(0, 0, 0, 0)
+draw_order = 0
+script = ExtResource("5")
+
+[node name="Fith" type="Path2D" parent="."]
+position = Vector2(576, 162)
+scale = Vector2(0.523438, 0.523438)
+curve = SubResource("14")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Fith"]
+position = Vector2(0, -3.82089)
+rotates = false
+
+[node name="Fith2" type="Sprite2D" parent="Fith/PathFollow2D"]
+texture = ExtResource("4")
+
+[node name="MISS" type="Marker2D" parent="Fith/PathFollow2D/Fith2"]
+position = Vector2(80, -338)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("6")
+autoplay = true
+
+[node name="Arena" type="Marker2D" parent="."]
+position = Vector2(576, 448)
+
+[node name="Next" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Next"]
+position = Vector2(578, 774)
+shape = SubResource("15")
+
+[connection signal="pressed" from="Button/Fight" to="." method="_on_fight_pressed"]
+[connection signal="pressed" from="Button/Stats" to="." method="_on_stats_pressed"]
+[connection signal="pressed" from="Button/Heal" to="." method="_on_heal_pressed"]
+[connection signal="pressed" from="Button/Quit" to="." method="_on_quit_pressed"]
+[connection signal="body_entered" from="Next" to="." method="_on_next_body_entered"]

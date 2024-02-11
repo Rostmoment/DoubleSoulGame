@@ -1,0 +1,231 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://assets/fith/fight2.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dj1xewh1jckuq" path="res://assets/textures/block.png" id="2"]
+
+[sub_resource type="TileSetAtlasSource" id="1"]
+texture = ExtResource("2")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:0/0/script = null
+script = null
+
+[sub_resource type="TileSet" id="2"]
+physics_layer_0/collision_layer = 16
+physics_layer_0/collision_mask = 16
+sources/1 = SubResource("1")
+script = null
+
+[sub_resource type="Animation" id="3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect3:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect4:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-3.14159]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TileMap:tile_set")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("2")]
+}
+script = null
+
+[sub_resource type="Animation" id="4"]
+resource_name = "delete"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1e-05, 1e-05)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"delete"
+}]
+}
+script = null
+
+[sub_resource type="Animation" id="5"]
+resource_name = "final"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect3:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.5708]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect4:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-3.14159, -4.71239]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TileMap:tile_set")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [SubResource("2"), SubResource("2")]
+}
+script = null
+
+[sub_resource type="Animation" id="6"]
+resource_name = "ready"
+length = 0.2
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05), Vector2(1, 1)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="7"]
+_data = {
+"RESET": SubResource("3"),
+"delete": SubResource("4"),
+"final": SubResource("5"),
+"ready": SubResource("6")
+}
+script = null
+
+[sub_resource type="RectangleShape2D" id="8"]
+size = Vector2(256, 2)
+script = null
+
+[node name="Arena" type="Node2D"]
+process_mode = 1
+script = ExtResource("1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -258.0
+offset_top = -114.0
+offset_right = 258.0
+offset_bottom = 114.0
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = -256.0
+offset_top = -112.0
+offset_right = 256.0
+offset_bottom = 114.0
+color = Color(0, 0, 0, 1)
+
+[node name="TileMap" type="TileMap" parent="."]
+visible = false
+tile_set = SubResource("2")
+format = 2
+layer_0/tile_data = PackedInt32Array(458735, 1, 0, 393232, 1, 0, -524273, 1, 0, -524274, 1, 0, -524275, 1, 0, -524276, 1, 0, -524277, 1, 0, -524278, 1, 0, -524279, 1, 0, -524280, 1, 0, -524281, 1, 0, -524282, 1, 0, -524283, 1, 0, -524284, 1, 0, -524285, 1, 0, -524286, 1, 0, -524287, 1, 0, -524288, 1, 0, -458753, 1, 0, -458754, 1, 0, -458755, 1, 0, -458756, 1, 0, -458757, 1, 0, -458758, 1, 0, -458759, 1, 0, -458760, 1, 0, -458761, 1, 0, -458762, 1, 0, -458763, 1, 0, -458764, 1, 0, -458765, 1, 0, -458766, 1, 0, -458767, 1, 0, -458768, 1, 0, -458769, 1, 0, -393233, 1, 0, -327697, 1, 0, -262161, 1, 0, -196625, 1, 0, -131089, 1, 0, -65553, 1, 0, -17, 1, 0, 65519, 1, 0, 131055, 1, 0, 196591, 1, 0, 262127, 1, 0, 327663, 1, 0, 393199, 1, 0, 327696, 1, 0, 262160, 1, 0, 196624, 1, 0, 131088, 1, 0, 65552, 1, 0, 16, 1, 0, -65520, 1, 0, -131056, 1, 0, -196592, 1, 0, -262128, 1, 0, -327664, 1, 0, -393200, 1, 0, -458736, 1, 0, -524272, 1, 0, 458768, 1, 0, 524271, 1, 0)
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("7")
+}
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = -256.0
+offset_top = 112.0
+offset_bottom = 114.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ColorRect3"]
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect3/StaticBody2D"]
+position = Vector2(128, 1)
+shape = SubResource("8")
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+offset_left = 258.0
+offset_top = 114.0
+offset_right = 516.0
+offset_bottom = 116.0
+rotation = -3.14159
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="ColorRect4"]
+position = Vector2(258, 2.00002)
+rotation = -3.14159
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect4/StaticBody2D2"]
+position = Vector2(128, 1)
+shape = SubResource("8")

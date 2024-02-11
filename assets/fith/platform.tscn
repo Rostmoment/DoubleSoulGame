@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" uid="uid://cvh6s7tbhh0ra" path="res://assets/textures/platform_fith.png" id="1"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(16, 16)
+script = null
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16, -4)
+scale = Vector2(1, 0.5)
+texture = ExtResource("1")
+region_rect = Rect2(0.620827, 0, 30.9449, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(16, -4)
+scale = Vector2(2, 0.5)
+shape = SubResource("1")
+one_way_collision = true
+debug_color = Color(0, 0.639216, 0.345098, 0.419608)

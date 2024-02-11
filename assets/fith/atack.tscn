@@ -1,0 +1,257 @@
+[gd_scene load_steps=15 format=3]
+
+[ext_resource type="Script" path="res://assets/fith/atack.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://dffsandg8wwdg" path="res://assets/fonts/better-vcr-5.2.ttf" id="2"]
+[ext_resource type="Texture2D" uid="uid://dlagxdrucuwvm" path="res://assets/textures/Final/atack.png" id="3"]
+
+[sub_resource type="LabelSettings" id="1"]
+font = ExtResource("2")
+font_size = 75
+outline_size = 3
+outline_color = Color(1, 0, 0, 1)
+shadow_size = 4
+shadow_color = Color(1, 0, 0, 1)
+script = null
+
+[sub_resource type="Animation" id="2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(458, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Marker2D/Label2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Marker2D/Label2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(26, -24)]
+}
+script = null
+
+[sub_resource type="Animation" id="3"]
+resource_name = "button"
+length = 1.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(244, 0), Vector2(-240, 0)]
+}
+script = null
+
+[sub_resource type="Animation" id="4"]
+resource_name = "delete"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1e-05, 1e-05)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"delete"
+}]
+}
+script = null
+
+[sub_resource type="Animation" id="5"]
+resource_name = "miss"
+length = 0.8
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Marker2D/Label2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.7, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Marker2D/Label2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(26, -14), Vector2(26, -24), Vector2(26, -14)]
+}
+script = null
+
+[sub_resource type="Animation" id="6"]
+resource_name = "ready"
+length = 0.2
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05), Vector2(1, 1)]
+}
+script = null
+
+[sub_resource type="AnimationLibrary" id="7"]
+_data = {
+"RESET": SubResource("2"),
+"button": SubResource("3"),
+"delete": SubResource("4"),
+"miss": SubResource("5"),
+"ready": SubResource("6")
+}
+script = null
+
+[sub_resource type="RectangleShape2D" id="8"]
+size = Vector2(20, 160)
+script = null
+
+[sub_resource type="RectangleShape2D" id="9"]
+size = Vector2(199, 40)
+script = null
+
+[sub_resource type="RectangleShape2D" id="10"]
+size = Vector2(205, 40)
+script = null
+
+[sub_resource type="RectangleShape2D" id="11"]
+size = Vector2(68, 160)
+script = null
+
+[node name="Atack" type="Node2D"]
+process_mode = 3
+script = ExtResource("1")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(80, -414)
+
+[node name="Label2" type="Label" parent="Marker2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 26.0
+offset_top = -24.0
+offset_right = 250.0
+offset_bottom = 51.0
+text = "MISS"
+label_settings = SubResource("1")
+
+[node name="Spawn" type="Marker2D" parent="."]
+position = Vector2(576, 448)
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+process_mode = 3
+libraries = {
+"": SubResource("7")
+}
+
+[node name="Atack" type="Sprite2D" parent="."]
+position = Vector2(-7.62939e-06, 4.76837e-06)
+scale = Vector2(7.4375, 5)
+texture = ExtResource("3")
+
+[node name="Button" type="AnimatableBody2D" parent="."]
+position = Vector2(458, 0)
+collision_layer = 4
+collision_mask = 0
+
+[node name="ColorRect" type="ColorRect" parent="Button"]
+offset_left = -10.0
+offset_top = -80.0
+offset_right = 10.0
+offset_bottom = 80.0
+color = Color(1, 1, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Button"]
+shape = SubResource("8")
+
+[node name="False" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="False"]
+position = Vector2(-140, 4)
+shape = SubResource("9")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="False"]
+position = Vector2(134.5, 4)
+shape = SubResource("10")
+
+[node name="True" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="True"]
+position = Vector2(-4, 0)
+shape = SubResource("11")
+
+[connection signal="body_entered" from="False" to="." method="_on_false_body_entered"]
+[connection signal="body_entered" from="True" to="." method="_on_true_body_entered"]

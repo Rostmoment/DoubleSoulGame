@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btdw0wu025lux"
+path="res://.godot/imported/Weepin__Lucifer.mp3-86708e1b008ffb305d774d6cc03003b9.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Weepin__Lucifer.mp3"
+dest_files=PackedStringArray("res://.godot/imported/Weepin__Lucifer.mp3-86708e1b008ffb305d774d6cc03003b9.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

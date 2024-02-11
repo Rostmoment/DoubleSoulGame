@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" uid="uid://dxx8ss3qfl87a" path="res://assets/textures/button.png" id="1"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(16, 16)
+script = null
+
+[node name="FakeButton" type="Area2D"]
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 8)
+shape = SubResource("1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1")
+centered = false

@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dmqwpwd8wp8pd"
+path="res://.godot/imported/aaaa.wav-4c302c961966cc8736eec0c42a607ae8.sample"
+
+[deps]
+
+source_file="res://assets/music/aaaa.wav"
+dest_files=PackedStringArray("res://.godot/imported/aaaa.wav-4c302c961966cc8736eec0c42a607ae8.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://8mtwni8047ng"
+path="res://.godot/imported/793759_Mystic-way.mp3-ef1ebfe23e5aadcc95f9e6f465f22689.mp3str"
+
+[deps]
+
+source_file="res://assets/music/793759_Mystic-way.mp3"
+dest_files=PackedStringArray("res://.godot/imported/793759_Mystic-way.mp3-ef1ebfe23e5aadcc95f9e6f465f22689.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,54 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="PackedScene" uid="uid://bwmm1fimq82ab" path="res://assets/scenes/music.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://dj1xewh1jckuq" path="res://assets/textures/block.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://c4hgblrlrpm1d" path="res://assets/scenes/soul_1.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://cijv0dt0mme13" path="res://assets/scenes/russian.tscn" id="4"]
+[ext_resource type="Script" path="res://assets/scripts/russian.gd" id="5"]
+[ext_resource type="PackedScene" uid="uid://cbmlt5rkngc7l" path="res://assets/scenes/english.tscn" id="6"]
+
+[sub_resource type="TileSetAtlasSource" id="1"]
+texture = ExtResource("2")
+0:0/next_alternative_id = 3
+0:0/0 = 0
+0:0/0/z_index = 1
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:0/0/script = null
+0:0/2 = 2
+0:0/2/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/2/physics_layer_0/angular_velocity = 0.0
+0:0/2/script = null
+script = null
+
+[sub_resource type="TileSet" id="2"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("1")
+script = null
+
+[node name="config_language" type="Node2D"]
+metadata/_edit_vertical_guides_ = [1408.0, 1536.0]
+
+[node name="AudioStreamPlayer2D" parent="." instance=ExtResource("1")]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_right = 3676.0
+offset_bottom = 1772.0
+size_flags_horizontal = 8
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(0, 8)
+tile_set = SubResource("2")
+format = 2
+layer_0/tile_data = PackedInt32Array(3407954, 0, 0, 3407955, 0, 0, 3407956, 0, 0, 3407957, 0, 0, 3407958, 0, 0, 3407959, 0, 0, 3407968, 0, 0, 3407969, 0, 0, 3407970, 0, 0, 3407971, 0, 0, 3407972, 0, 0, 3407973, 0, 0, 3407974, 0, 0, 2752614, 0, 0, 2752609, 0, 0, 2752610, 0, 0, 2752611, 0, 0, 2752612, 0, 0, 2752613, 0, 0, 2752608, 0, 0, 2752607, 0, 0, 2752606, 0, 0, 2752605, 0, 0, 2752604, 0, 0, 2752603, 0, 0, 2752602, 0, 0, 2752601, 0, 0, 2752600, 0, 0, 2752599, 0, 0, 2752598, 0, 0, 2752597, 0, 0, 2752596, 0, 0, 2752595, 0, 0, 2752594, 0, 0, 2752593, 0, 0, 3080272, 0, 0, 3014736, 0, 0, 2949200, 0, 0, 2883664, 0, 0, 2818128, 0, 0, 2752592, 0, 0, 3145808, 0, 0, 3211344, 0, 0, 3276880, 0, 0, 3342416, 0, 0, 3407952, 0, 0, 3407953, 0, 0, 2752615, 0, 0, 2818151, 0, 0, 2883687, 0, 0, 2949223, 0, 0, 3014759, 0, 0, 3080295, 0, 0, 3145831, 0, 0, 3211367, 0, 0, 3276903, 0, 0, 3342439, 0, 0, 3407975, 0, 0, 3407960, 0, 0, 3407961, 0, 0, 3407962, 0, 0, 3407963, 0, 0, 3407964, 0, 0, 3407965, 0, 0, 3407966, 0, 0, 3407967, 0, 0)
+
+[node name="Soul1" parent="." instance=ExtResource("3")]
+position = Vector2(1472, 768)
+
+[node name="Language" parent="." instance=ExtResource("4")]
+position = Vector2(1328, 756)
+script = ExtResource("5")
+
+[node name="Language2" parent="." instance=ExtResource("6")]
+position = Vector2(1536, 756)

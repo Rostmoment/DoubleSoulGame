@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://assets/scripts/Label/death.gd" id="1"]
+
+[node name="DeathCount" type="CanvasLayer"]
+offset = Vector2(25, 10)
+scale = Vector2(1.5, 1.5)
+transform = Transform2D(1.5, 0, 0, 1.5, 25, 10)
+
+[node name="Label" type="Label" parent="."]
+offset_right = 215.0
+offset_bottom = 55.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource("1")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cccfku5xeyw84"
+path="res://.godot/imported/PixiesWhereIsMyMind.ogg-1edbf671862ab31e7b1fc10c71d37b57.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/PixiesWhereIsMyMind.ogg"
+dest_files=PackedStringArray("res://.godot/imported/PixiesWhereIsMyMind.ogg-1edbf671862ab31e7b1fc10c71d37b57.oggvorbisstr")
+
+[params]
+
+dummy_value_ignore_me=0

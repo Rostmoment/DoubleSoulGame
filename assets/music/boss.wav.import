@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cs1xpp08l1g6q"
+path="res://.godot/imported/boss.wav-c214c1670390413c85340ee95e002961.sample"
+
+[deps]
+
+source_file="res://assets/music/boss.wav"
+dest_files=PackedStringArray("res://.godot/imported/boss.wav-c214c1670390413c85340ee95e002961.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

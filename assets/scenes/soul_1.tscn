@@ -1,0 +1,75 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://assets/scripts/soul1.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://bwmm1fimq82ab" path="res://assets/scenes/music.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://d3nx63y1iejwo" path="res://assets/scenes/paused.tscn" id="3"]
+[ext_resource type="Texture2D" uid="uid://cydopqgpfv8a7" path="res://assets/textures/soul1.png" id="4"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(10, 10)
+script = null
+
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(10, 10)
+script = null
+
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(15.748, 15.748)
+script = null
+
+[sub_resource type="RectangleShape2D" id="4"]
+size = Vector2(15.748, 15.748)
+script = null
+
+[node name="Soul1" type="CharacterBody2D"]
+collision_layer = 15
+collision_mask = 17
+script = ExtResource("1")
+
+[node name="AudioStreamPlayer2D" parent="." instance=ExtResource("2")]
+script = null
+
+[node name="CanvasLayer" parent="." instance=ExtResource("3")]
+visible = false
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.635, 0.635)
+texture = ExtResource("4")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.5, 2.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("2")
+
+[node name="Checker" type="Area2D" parent="."]
+position = Vector2(-5.96046e-08, -1.19209e-07)
+scale = Vector2(0.635, 0.635)
+collision_layer = 0
+collision_mask = 64
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Checker"]
+position = Vector2(-3.75462e-07, 3.75462e-07)
+shape = SubResource("3")
+
+[node name="Checker2" type="Area2D" parent="."]
+position = Vector2(-7.10543e-15, -1.42109e-14)
+scale = Vector2(0.635, 0.635)
+collision_layer = 0
+collision_mask = 128
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Checker2"]
+position = Vector2(-2.34664e-07, 2.23793e-14)
+shape = SubResource("4")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="area_entered" from="Checker2" to="." method="_on_checker_2_area_entered"]

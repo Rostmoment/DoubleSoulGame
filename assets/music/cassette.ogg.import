@@ -1,0 +1,15 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dyij8ova4kc75"
+path="res://.godot/imported/cassette.ogg-cb185a78d6fc70952a0882290226a50f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/cassette.ogg"
+dest_files=PackedStringArray("res://.godot/imported/cassette.ogg-cb185a78d6fc70952a0882290226a50f.oggvorbisstr")
+
+[params]
+
+dummy_value_ignore_me=0

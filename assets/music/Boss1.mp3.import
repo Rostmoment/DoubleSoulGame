@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bpxm1j5m1iiqb"
+path="res://.godot/imported/Boss1.mp3-ad978392cff59dc2d1417b05c7db5c76.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Boss1.mp3"
+dest_files=PackedStringArray("res://.godot/imported/Boss1.mp3-ad978392cff59dc2d1417b05c7db5c76.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

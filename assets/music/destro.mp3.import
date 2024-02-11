@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jheclbwt5wx1"
+path="res://.godot/imported/destro.mp3-11ad702b283343718d4ec59058adccb0.mp3str"
+
+[deps]
+
+source_file="res://assets/music/destro.mp3"
+dest_files=PackedStringArray("res://.godot/imported/destro.mp3-11ad702b283343718d4ec59058adccb0.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://dffsandg8wwdg"
+path="res://.godot/imported/better-vcr-5.2.ttf-99f3fea0cbf2d3d2a15d5713e0c5bc55.fontdata"
+
+[deps]
+
+source_file="res://assets/fonts/better-vcr-5.2.ttf"
+dest_files=PackedStringArray("res://.godot/imported/better-vcr-5.2.ttf-99f3fea0cbf2d3d2a15d5713e0c5bc55.fontdata")
+
+[params]
+
+dummy_value_ignore_me=0

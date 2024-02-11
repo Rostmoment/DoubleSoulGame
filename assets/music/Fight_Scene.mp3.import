@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://by3oku2ikxqq2"
+path="res://.godot/imported/Fight_Scene.mp3-cf39e9f71dff61ebb109bb720e534908.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Fight_Scene.mp3"
+dest_files=PackedStringArray("res://.godot/imported/Fight_Scene.mp3-cf39e9f71dff61ebb109bb720e534908.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

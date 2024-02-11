@@ -1,0 +1,15 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dhs0gy56757pl"
+path="res://.godot/imported/FITH_REVOLVING.ogg-b61776d65910b98615c78024c435a650.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/FITH_REVOLVING.ogg"
+dest_files=PackedStringArray("res://.godot/imported/FITH_REVOLVING.ogg-b61776d65910b98615c78024c435a650.oggvorbisstr")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ctaw3kcnml8gi"
+path="res://.godot/imported/error.wav-d5a2a3d8aedb914a79014a14e2ace643.sample"
+
+[deps]
+
+source_file="res://assets/music/error.wav"
+dest_files=PackedStringArray("res://.godot/imported/error.wav-d5a2a3d8aedb914a79014a14e2ace643.sample")
+
+[params]
+
+dummy_value_ignore_me=0
+compress/mode=0

@@ -1,0 +1,174 @@
+[gd_scene load_steps=20 format=3]
+
+[ext_resource type="PackedScene" uid="uid://vfohcas2v7gx" path="res://assets/scenes/platform2.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://bp5mfc56ho13a" path="res://assets/textures/checkpoint.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://pmton33horiw" path="res://assets/textures/pisun.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bur1allxvc3pu" path="res://assets/textures/tile.png" id="4"]
+[ext_resource type="PackedScene" uid="uid://ckxv2y2yyey7b" path="res://assets/scenes/soul1_pl.tscn" id="5"]
+[ext_resource type="Script" path="res://assets/scripts/pl_tp_start.gd" id="6"]
+[ext_resource type="PackedScene" uid="uid://c2hthmim1ppdi" path="res://assets/scenes/platform.tscn" id="7"]
+[ext_resource type="PackedScene" uid="uid://6luh68wir73u" path="res://assets/scenes/jump_pad.tscn" id="8"]
+[ext_resource type="PackedScene" uid="uid://bilw3ovihsv7k" path="res://assets/scenes/key.tscn" id="9"]
+[ext_resource type="PackedScene" uid="uid://evnqivi0so5c" path="res://assets/scenes/door_open.tscn" id="10"]
+[ext_resource type="Script" path="res://assets/scripts/door_pl_1.gd" id="11"]
+[ext_resource type="PackedScene" uid="uid://ddeses8cygw0b" path="res://assets/scenes/death_count.tscn" id="12"]
+[ext_resource type="Script" path="res://assets/scripts/door_backpl.gd" id="13"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(18, 24)
+script = null
+
+[sub_resource type="TileSetAtlasSource" id="2"]
+texture = ExtResource("4")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:0/0/physics_layer_0/polygon_1/points = PackedVector2Array(5.92202, -6.0988, 5.74524, 3.09359, -4.68458, 5.74524, -5.21491, -2.91682)
+0:0/0/script = null
+script = null
+
+[sub_resource type="TileSet" id="3"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("2")
+script = null
+
+[sub_resource type="RectangleShape2D" id="4"]
+size = Vector2(3416, 158)
+script = null
+
+[sub_resource type="Curve2D" id="5"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 16, -248, 0, 0, 0, 0, 16, -56, 0, 0, 0, 0, 16, -56, 0, 0, 0, 0, 16, -248)
+}
+point_count = 4
+script = null
+
+[sub_resource type="Curve2D" id="6"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -264, -216, 0, 0, 0, 0, 24, -72, 0, 0, 0, 0, -264, -216)
+}
+point_count = 3
+script = null
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D" parent="." instance=ExtResource("1")]
+position = Vector2(3244.43, -910.144)
+
+[node name="CheckPoint" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CheckPoint"]
+position = Vector2(1020, -524)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CheckPoint"]
+position = Vector2(1020, -524)
+shape = SubResource("1")
+
+[node name="CheckPoint2" type="Area2D" parent="."]
+position = Vector2(2340, -462)
+collision_layer = 0
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CheckPoint2"]
+position = Vector2(1020, -524)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CheckPoint2"]
+position = Vector2(1020, -524)
+shape = SubResource("1")
+
+[node name="CheckPoint3" type="Area2D" parent="."]
+position = Vector2(2824, -654)
+collision_layer = 0
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CheckPoint3"]
+position = Vector2(1020, -524)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CheckPoint3"]
+position = Vector2(1020, -524)
+shape = SubResource("1")
+
+[node name="Pisun" type="Sprite2D" parent="."]
+position = Vector2(864, -544)
+rotation = 0.744576
+scale = Vector2(3, 3.5)
+texture = ExtResource("3")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("3")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0, -65521, 0, 0, -65520, 0, 0, -196590, 0, 0, -196589, 0, 0, -196588, 0, 0, -196587, 0, 0, -65513, 0, 0, -65512, 0, 0, -65511, 0, 0, -65510, 0, 0, -65509, 0, 0, -65508, 0, 0, -65507, 0, 0, -65506, 0, 0, -65505, 0, 0, -65504, 0, 0, -65503, 0, 0, -196574, 0, 0, -327644, 0, 0, -458714, 0, 0, -655326, 0, 0, -786400, 0, 0, -786401, 0, 0, -786402, 0, 0, -786403, 0, 0, -786404, 0, 0, -786405, 0, 0, -1572831, 0, 0, -1441755, 0, 0, -1507287, 0, 0, -1310675, 0, 0, -1376206, 0, 0, -1572812, 0, 0, -1966028, 0, 0, -2097098, 0, 0, -2097091, 0, 0, -2097090, 0, 0, -2097089, 0, 0, -2097088, 0, 0, -2097087, 0, 0, -1507262, 0, 0, -1507261, 0, 0, -1507260, 0, 0, -1507259, 0, 0, -1507258, 0, 0, -1507257, 0, 0, -1507256, 0, 0, -1507255, 0, 0, -1900477, 0, 0, -1703871, 0, 0, -1703884, 0, 0, -1834956, 0, 0, -1572811, 0, 0, -1703885, 0, 0, -1834955, 0, 0, -1966029, 0, 0, -2097097, 0, 0, -2818010, 0, 0, -2818011, 0, 0, -2818012, 0, 0, -2818013, 0, 0, -2818014, 0, 0, -2818015, 0, 0, -2818016, 0, 0, -2818017, 0, 0, -2818018, 0, 0, -2818019, 0, 0, -3276769, 0, 0, -3276768, 0, 0, -3735520, 0, 0, -4194272, 0, 0, -3735521, 0, 0, -4194273, 0, 0, -4194274, 0, 0, -4194275, 0, 0, -4194276, 0, 0, -4194277, 0, 0, -4194278, 0, 0, -4194279, 0, 0, -1507254, 0, 0, -1507253, 0, 0, -1507249, 0, 0, -1507245, 0, 0, -1507242, 0, 0, -1507240, 0, 0, -1507237, 0, 0, -1769394, 0, 0, -1769393, 0, 0, -1769392, 0, 0, -1769391, 0, 0, -1769390, 0, 0, -1769389, 0, 0, -1769388, 0, 0, -1769387, 0, 0, -1769386, 0, 0, -1769385, 0, 0, -1769384, 0, 0, -1769383, 0, 0, -1769382, 0, 0, -1769381, 0, 0, -1572770, 0, 0, -1638303, 0, 0, -1769373, 0, 0, -1965983, 0, 0, -2031522, 0, 0, -1900452, 0, 0, -1834930, 0, 0, -1900466, 0, 0, -1966002, 0, 0, -2031538, 0, 0, -1900444, 0, 0, -2097074, 0, 0, -2162610, 0, 0, -2228146, 0, 0, -2293682, 0, 0, -2359218, 0, 0, -2424754, 0, 0, -2424753, 0, 0, -2424752, 0, 0, -2424751, 0, 0, -2424750, 0, 0, -2424749, 0, 0, -2424748, 0, 0, -2424747, 0, 0, -2424746, 0, 0, -2424745, 0, 0, -2359209, 0, 0, -2293673, 0, 0, -2228137, 0, 0, -2162601, 0, 0, -2097065, 0, 0, -2097066, 0, 0, -2097067, 0, 0, -2097068, 0, 0)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("5")]
+position = Vector2(96, -27)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(692, 240)
+shape = SubResource("4")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(4239, -627)
+shape = SubResource("4")
+
+[node name="Platform" parent="." instance=ExtResource("7")]
+position = Vector2(381, -128)
+
+[node name="Platform2" parent="." instance=ExtResource("7")]
+position = Vector2(456, -232)
+curve = SubResource("5")
+speed = 50.0
+
+[node name="Platform3" parent="." instance=ExtResource("7")]
+position = Vector2(912, -464)
+curve = SubResource("6")
+
+[node name="Jumper" parent="." instance=ExtResource("8")]
+position = Vector2(512, -688)
+
+[node name="Jumper4" parent="." instance=ExtResource("8")]
+position = Vector2(1280, -432)
+
+[node name="Jumper2" parent="." instance=ExtResource("8")]
+position = Vector2(512, -800)
+
+[node name="Jumper3" parent="." instance=ExtResource("8")]
+position = Vector2(512, -912)
+
+[node name="Key" parent="." instance=ExtResource("9")]
+position = Vector2(432, -1032)
+
+[node name="DoorOpen" parent="." instance=ExtResource("10")]
+position = Vector2(1384, -512)
+scale = Vector2(1.5, 1.5)
+script = ExtResource("11")
+
+[node name="DeathCount" parent="." instance=ExtResource("12")]
+
+[node name="DoorOpen2" parent="." instance=ExtResource("10")]
+position = Vector2(3284, -974)
+scale = Vector2(1.5, 1.5)
+script = ExtResource("13")
+
+[connection signal="body_entered" from="CheckPoint" to="Area2D" method="_on_check_point_body_entered"]
+[connection signal="body_entered" from="CheckPoint2" to="Area2D" method="_on_check_point_2_body_entered"]
+[connection signal="body_entered" from="CheckPoint3" to="Area2D" method="_on_check_point_3_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="DoorOpen" to="DoorOpen" method="_on_body_entered"]
+[connection signal="body_entered" from="DoorOpen2" to="DoorOpen2" method="_on_body_entered"]

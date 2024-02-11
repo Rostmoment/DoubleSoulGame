@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://db1rv6rhycrym"
+path="res://.godot/imported/467339_At_the_Speed_of_Light_FINA.mp3-b868c891aee4ec8b99d3ab01d2290d0f.mp3str"
+
+[deps]
+
+source_file="res://assets/music/467339_At_the_Speed_of_Light_FINA.mp3"
+dest_files=PackedStringArray("res://.godot/imported/467339_At_the_Speed_of_Light_FINA.mp3-b868c891aee4ec8b99d3ab01d2290d0f.mp3str")
+
+[params]
+
+dummy_value_ignore_me=0

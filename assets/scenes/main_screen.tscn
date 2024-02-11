@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Texture2D" uid="uid://dj1xewh1jckuq" path="res://assets/textures/block.png" id="1"]
+[ext_resource type="PackedScene" uid="uid://dbuitap80qndp" path="res://assets/scenes/play.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://c4hgblrlrpm1d" path="res://assets/scenes/soul_1.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://cg7kvph5e7xnm" path="res://assets/scenes/quit.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://cyrbfrej5nnr1" path="res://assets/scenes/language.tscn" id="5"]
+[ext_resource type="Script" path="res://assets/scripts/language.gd" id="6"]
+
+[sub_resource type="TileSetAtlasSource" id="1"]
+texture = ExtResource("1")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:0/0/script = null
+script = null
+
+[sub_resource type="TileSet" id="2"]
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("1")
+script = null
+
+[node name="MainScreen" type="Node2D"]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_left = -152.0
+offset_top = 112.0
+offset_right = 3524.0
+offset_bottom = 1884.0
+size_flags_horizontal = 8
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("2")
+format = 2
+layer_0/tile_data = PackedInt32Array(3407954, 1, 0, 3407955, 1, 0, 3407956, 1, 0, 3407957, 1, 0, 3407958, 1, 0, 3407959, 1, 0, 3407960, 1, 0, 3407961, 1, 0, 3407962, 1, 0, 3407963, 1, 0, 3407964, 1, 0, 3407965, 1, 0, 3407966, 1, 0, 3407967, 1, 0, 3407968, 1, 0, 3407969, 1, 0, 3407970, 1, 0, 3407971, 1, 0, 3407972, 1, 0, 3407973, 1, 0, 3407974, 1, 0, 2752614, 1, 0, 2752609, 1, 0, 2752610, 1, 0, 2752611, 1, 0, 2752612, 1, 0, 2752613, 1, 0, 2752608, 1, 0, 2752607, 1, 0, 2752606, 1, 0, 2752605, 1, 0, 2752604, 1, 0, 2752603, 1, 0, 2752602, 1, 0, 2752601, 1, 0, 2752600, 1, 0, 2752599, 1, 0, 2752598, 1, 0, 2752597, 1, 0, 2752596, 1, 0, 2752595, 1, 0, 2752594, 1, 0, 2752593, 1, 0, 3080272, 1, 0, 3014736, 1, 0, 2949200, 1, 0, 2883664, 1, 0, 2818128, 1, 0, 2752592, 1, 0, 3145808, 1, 0, 3211344, 1, 0, 3276880, 1, 0, 3342416, 1, 0, 3407952, 1, 0, 3407953, 1, 0, 2752615, 1, 0, 2818151, 1, 0, 2883687, 1, 0, 2949223, 1, 0, 3014759, 1, 0, 3080295, 1, 0, 3145831, 1, 0, 3211367, 1, 0, 3276903, 1, 0, 3342439, 1, 0, 3407975, 1, 0)
+
+[node name="Play" parent="." instance=ExtResource("2")]
+position = Vector2(1352, 736)
+
+[node name="Soul1" parent="." instance=ExtResource("3")]
+position = Vector2(1468, 739)
+
+[node name="Quit" parent="." instance=ExtResource("4")]
+position = Vector2(1536, 736)
+
+[node name="Language" parent="." instance=ExtResource("5")]
+position = Vector2(1432, 792)
+script = ExtResource("6")

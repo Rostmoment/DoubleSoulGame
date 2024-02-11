@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://assets/scripts/attk.gd" id="1"]
+[ext_resource type="Script" path="res://assets/scripts/atk.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://cdmtoocdajcd4" path="res://assets/textures/attk.png" id="3"]
+
+[sub_resource type="Curve2D" id="1"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 62)
+}
+point_count = 2
+script = null
+
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(10, 10)
+script = null
+
+[node name="Attack" type="Path2D"]
+curve = SubResource("1")
+script = ExtResource("1")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(0, -1)
+rotation = 1.5708
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="PathFollow2D"]
+remote_path = NodePath("../../Area2D")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(0, -1)
+rotation = 1.5708
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(0, -5)
+texture = ExtResource("3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -5)
+shape = SubResource("2")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

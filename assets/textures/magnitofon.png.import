@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bhb6lodkh0lcx"
+path="res://.godot/imported/magnitofon.png-e5b8ee9f31433867364de38be3d10a34.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/magnitofon.png"
+dest_files=PackedStringArray("res://.godot/imported/magnitofon.png-e5b8ee9f31433867364de38be3d10a34.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

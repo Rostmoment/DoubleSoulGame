@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dlagxdrucuwvm"
+path="res://.godot/imported/atack.png-79cd869d8fb41c1744702cda6fc8b066.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/Final/atack.png"
+dest_files=PackedStringArray("res://.godot/imported/atack.png-79cd869d8fb41c1744702cda6fc8b066.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

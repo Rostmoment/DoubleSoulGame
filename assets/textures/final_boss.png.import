@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bpuedkdm66xg2"
+path="res://.godot/imported/final_boss.png-2acc7aeb0206144bfeab5ae5abbb89e9.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/final_boss.png"
+dest_files=PackedStringArray("res://.godot/imported/final_boss.png-2acc7aeb0206144bfeab5ae5abbb89e9.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

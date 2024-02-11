@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dpvgnvoat4abc"
+path="res://.godot/imported/tile16.png-04c120f6e50c3a36a186e6a2fa2e428c.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/tile16.png"
+dest_files=PackedStringArray("res://.godot/imported/tile16.png-04c120f6e50c3a36a186e6a2fa2e428c.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

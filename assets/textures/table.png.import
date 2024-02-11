@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cx23xcqicj5ml"
+path="res://.godot/imported/table.png-498649bb62a9d0c192aec279ccadd91e.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/table.png"
+dest_files=PackedStringArray("res://.godot/imported/table.png-498649bb62a9d0c192aec279ccadd91e.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

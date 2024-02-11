@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bivnas1b3bxwd"
+path="res://.godot/imported/groundSquare_01_001.png-1e6f9508bfba6fa8d979c7946ff1ff6a.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/groundSquare_01_001.png"
+dest_files=PackedStringArray("res://.godot/imported/groundSquare_01_001.png-1e6f9508bfba6fa8d979c7946ff1ff6a.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

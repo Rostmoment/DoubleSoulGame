@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b7yktuuwovrhk"
+path="res://.godot/imported/bg0.png-875147b61aa9f79536c5c34f2f644d00.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/Final/bg0.png"
+dest_files=PackedStringArray("res://.godot/imported/bg0.png-875147b61aa9f79536c5c34f2f644d00.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

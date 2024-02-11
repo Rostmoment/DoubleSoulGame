@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://u7pwe75mofea"
+path="res://.godot/imported/cursor_big.png-37464c4b903ae3b03b4f5049b8750c9a.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/cursor_big.png"
+dest_files=PackedStringArray("res://.godot/imported/cursor_big.png-37464c4b903ae3b03b4f5049b8750c9a.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

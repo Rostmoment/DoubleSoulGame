@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://c4tgs7pfn4i27"
+path="res://.godot/imported/gun_idle.png-0e80f7a80235383fb3e3abe3b80bb501.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/Final/gun_idle.png"
+dest_files=PackedStringArray("res://.godot/imported/gun_idle.png-0e80f7a80235383fb3e3abe3b80bb501.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

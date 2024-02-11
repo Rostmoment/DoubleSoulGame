@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cydopqgpfv8a7"
+path="res://.godot/imported/soul1.png-8aa44c717bf6fe102093c728b00af69d.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/soul1.png"
+dest_files=PackedStringArray("res://.godot/imported/soul1.png-8aa44c717bf6fe102093c728b00af69d.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

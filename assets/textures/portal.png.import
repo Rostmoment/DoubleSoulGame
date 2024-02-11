@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://24y5qamr16cl"
+path="res://.godot/imported/portal.png-03929c3e651451e69650c32dc9a9901a.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/portal.png"
+dest_files=PackedStringArray("res://.godot/imported/portal.png-03929c3e651451e69650c32dc9a9901a.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

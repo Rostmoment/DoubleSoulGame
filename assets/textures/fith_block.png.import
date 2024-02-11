@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dqwbfnkqsyk1u"
+path="res://.godot/imported/fith_block.png-d2571adb5ca7a3d79ec01a457e3b24e6.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/fith_block.png"
+dest_files=PackedStringArray("res://.godot/imported/fith_block.png-d2571adb5ca7a3d79ec01a457e3b24e6.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

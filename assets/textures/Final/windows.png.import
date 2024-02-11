@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://owwki1ll8pvf"
+path="res://.godot/imported/windows.png-6054c929cc6f716a51f133cdcfd5c128.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/Final/windows.png"
+dest_files=PackedStringArray("res://.godot/imported/windows.png-6054c929cc6f716a51f133cdcfd5c128.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

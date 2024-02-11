@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b1e2fiw12av3i"
+path="res://.godot/imported/space.png-1c7574e14e7e9fab55f2d989c8154977.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/space.png"
+dest_files=PackedStringArray("res://.godot/imported/space.png-1c7574e14e7e9fab55f2d989c8154977.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

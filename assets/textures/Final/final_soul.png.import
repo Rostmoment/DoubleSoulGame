@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://2cle0wjswf11"
+path="res://.godot/imported/final_soul.png-4e8989b0e08fe82543135e1dcb629966.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/Final/final_soul.png"
+dest_files=PackedStringArray("res://.godot/imported/final_soul.png-4e8989b0e08fe82543135e1dcb629966.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

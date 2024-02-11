@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dpusfsshhbgwt"
+path="res://.godot/imported/gun_run.png-f1af8c261a075c7a2a68f0da8be8cae9.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/Final/gun_run.png"
+dest_files=PackedStringArray("res://.godot/imported/gun_run.png-f1af8c261a075c7a2a68f0da8be8cae9.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

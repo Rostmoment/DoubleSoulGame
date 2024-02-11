@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://djrk3nc7b0tew"
+path="res://.godot/imported/soul2.png-a1838b0f02e47a15cf52673c33325403.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/soul2.png"
+dest_files=PackedStringArray("res://.godot/imported/soul2.png-a1838b0f02e47a15cf52673c33325403.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dfcqxrmun3ga3"
+path="res://.godot/imported/soul_atk2.png-118ed59643d7648eea66708b10a7967c.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/Final/soul_atk2.png"
+dest_files=PackedStringArray("res://.godot/imported/soul_atk2.png-118ed59643d7648eea66708b10a7967c.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

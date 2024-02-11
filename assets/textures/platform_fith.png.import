@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cvh6s7tbhh0ra"
+path="res://.godot/imported/platform_fith.png-dd06726102fa6671dc8c0fd6c4d0b781.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/platform_fith.png"
+dest_files=PackedStringArray("res://.godot/imported/platform_fith.png-dd06726102fa6671dc8c0fd6c4d0b781.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

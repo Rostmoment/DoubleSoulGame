@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://mepjptmcpinn"
+path="res://.godot/imported/jump_pad.png-57454a6f28cb4ef5f43512ed08d1dbb1.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/jump_pad.png"
+dest_files=PackedStringArray("res://.godot/imported/jump_pad.png-57454a6f28cb4ef5f43512ed08d1dbb1.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

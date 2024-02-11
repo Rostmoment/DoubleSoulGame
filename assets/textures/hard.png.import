@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bv06pakdn1sd1"
+path="res://.godot/imported/hard.png-5f105b2794d76d6c26b7630179375eac.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/hard.png"
+dest_files=PackedStringArray("res://.godot/imported/hard.png-5f105b2794d76d6c26b7630179375eac.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://2c7xofqolltu"
+path="res://.godot/imported/double_jump.png-211b2a6f5a0624003e6bc6ad1b117f6e.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/double_jump.png"
+dest_files=PackedStringArray("res://.godot/imported/double_jump.png-211b2a6f5a0624003e6bc6ad1b117f6e.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

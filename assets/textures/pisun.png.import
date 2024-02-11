@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://pmton33horiw"
+path="res://.godot/imported/pisun.png-c00c4bfe59728ceb5750222251f9c804.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/textures/pisun.png"
+dest_files=PackedStringArray("res://.godot/imported/pisun.png-c00c4bfe59728ceb5750222251f9c804.ctex")
+
+[params]
+
+dummy_value_ignore_me=0

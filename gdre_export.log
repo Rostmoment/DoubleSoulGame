@@ -1,0 +1,93 @@
+GDRE Tools v0.6.2
+Windows 10.0.22621, NVIDIA GeForce GTX 1650, opengl3
+Extracted 537 files, no errors detected!
+USER WARNING: Converting lossy imports, you may lose fidelity for indicated assets when re-importing upon loading the project
+   at: ImportExporter::_export_imports (modules\gdsdecomp\utility\import_exporter.cpp:58)
+Recreated plugin config for dialogue_manager
+Did not rewrite import metadata for res://addons/dialogue_manager/assets/icon.svg
+Did not rewrite import metadata for res://addons/dialogue_manager/assets/responses_menu.svg
+Did not rewrite import metadata for res://addons/dialogue_manager/assets/update.svg
+USER WARNING: Conversion for Resource of type Resource and format dialogue not implemented
+   at: ImportExporter::report_unsupported_resource (modules\gdsdecomp\utility\import_exporter.cpp:1052)
+Did not convert Resource resource res://.godot/imported/dialog_last.dialogue-87cdf48443f951be2efe4c6c8196c1fc.tres
+Did not convert Resource resource res://.godot/imported/en_soul_dialog1.dialogue-dafda09ee8ba702c87579731597df5eb.tres
+Did not convert Resource resource res://.godot/imported/end.dialogue-2d0becf56d4971108003dc6e0de2ae60.tres
+Did not convert Resource resource res://.godot/imported/preend.dialogue-a5939885db7d03c92b0074869dcc1da1.tres
+Did not convert Resource resource res://.godot/imported/soul_dialog1.dialogue-dc3599eb218b4c3eeeb3fac17f12f930.tres
+Did not convert Resource resource res://.godot/imported/soul_final.dialogue-88d01610b74b2a138181927a6a6628e7.tres
+Did not convert Resource resource res://.godot/imported/trueend.dialogue-0bd4f95047063d13e0e7f7e7462b89d7.tres
+Did not rewrite import metadata for res://icon.svg
+Saved project config project.godot.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     0
+Failed scripts:                         0
+Imported resources for export session:  537
+Successfully converted:                 182
+Lossy:                                  16
+Rewrote metadata:                       0
+Non-importable conversions:             4
+Not converted:                          7
+Failed conversions:                     0
+-------------
+
+
+The following files were converted from an import that was stored lossy.
+You may lose fidelity when re-importing these files upon loading the project.
+res://.godot/imported/icon.svg-17eb5d3e2a3cfbe59852220758c5b7bd.ctex to res://.assets/addons/dialogue_manager/assets/icon.png
+res://.godot/imported/responses_menu.svg-87cf63ca685d53616205049572f4eb8f.ctex to res://.assets/addons/dialogue_manager/assets/responses_menu.png
+res://.godot/imported/update.svg-f1628866ed4eb2e13e3b81f75443687e.ctex to res://.assets/addons/dialogue_manager/assets/update.png
+res://.godot/imported/better-vcr-5.2.ttf-99f3fea0cbf2d3d2a15d5713e0c5bc55.fontdata to res://assets/fonts/better-vcr-5.2.ttf
+res://.godot/imported/FITH_REVOLVING.ogg-b61776d65910b98615c78024c435a650.oggvorbisstr to res://assets/music/FITH_REVOLVING.ogg
+res://.godot/imported/PixiesWhereIsMyMind.ogg-1edbf671862ab31e7b1fc10c71d37b57.oggvorbisstr to res://assets/music/PixiesWhereIsMyMind.ogg
+res://.godot/imported/aaaa.wav-4c302c961966cc8736eec0c42a607ae8.sample to res://assets/music/aaaa.wav
+res://.godot/imported/boss.wav-c214c1670390413c85340ee95e002961.sample to res://assets/music/boss.wav
+res://.godot/imported/cassette.ogg-cb185a78d6fc70952a0882290226a50f.oggvorbisstr to res://assets/music/cassette.ogg
+res://.godot/imported/dsg.ogg-0d473cc0b762019e9b9d17823c9968c7.oggvorbisstr to res://assets/music/dsg.ogg
+res://.godot/imported/error.wav-d5a2a3d8aedb914a79014a14e2ace643.sample to res://assets/music/error.wav
+res://.godot/imported/fith.ogg-fee234d709013e3f746ca1c6ca27cbd7.oggvorbisstr to res://assets/music/fith.ogg
+res://.godot/imported/hit.wav-865fcc9893fd0d90fd96cf884124be45.sample to res://assets/music/hit.wav
+res://.godot/imported/americos.jpg-a04e477c358a642d0df68285670bfebf.ctex to res://assets/textures/americos.jpg
+res://.godot/imported/artem.jpg-23e9b86acac55dde1fc193c9ca313d82.ctex to res://assets/textures/artem.jpg
+res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex to res://.assets/icon.png
+------
+
+The following files were converted and saved to a non-original path, but did not have their import data rewritten.
+These files will not be re-imported when loading the project.
+res://.godot/imported/icon.svg-17eb5d3e2a3cfbe59852220758c5b7bd.ctex to res://.assets/addons/dialogue_manager/assets/icon.png
+res://.godot/imported/responses_menu.svg-87cf63ca685d53616205049572f4eb8f.ctex to res://.assets/addons/dialogue_manager/assets/responses_menu.png
+res://.godot/imported/update.svg-f1628866ed4eb2e13e3b81f75443687e.ctex to res://.assets/addons/dialogue_manager/assets/update.png
+res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex to res://.assets/icon.png
+------
+
+The following files were not converted because support has not been implemented yet:
+res://.godot/imported/dialog_last.dialogue-87cdf48443f951be2efe4c6c8196c1fc.tres
+res://.godot/imported/en_soul_dialog1.dialogue-dafda09ee8ba702c87579731597df5eb.tres
+res://.godot/imported/end.dialogue-2d0becf56d4971108003dc6e0de2ae60.tres
+res://.godot/imported/preend.dialogue-a5939885db7d03c92b0074869dcc1da1.tres
+res://.godot/imported/soul_dialog1.dialogue-dc3599eb218b4c3eeeb3fac17f12f930.tres
+res://.godot/imported/soul_final.dialogue-88d01610b74b2a138181927a6a6628e7.tres
+res://.godot/imported/trueend.dialogue-0bd4f95047063d13e0e7f7e7462b89d7.tres
+
+
+
+---------------------------------IMPORTANT NOTES----------------------------------
+
+The following resource types were detected in the project that conversion is not implemented for yet:
+Type: Resource            	Format: dialogue
+See Export Report to see which resources were not exported.
+You will still be able to edit the project in the editor regardless.
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.2.0 to edit the project.
+Note: the project may be using a custom version of Godot. Detection for this has not been implemented yet.
+If you find that you have many non-import errors upon opening the project 
+(i.e. scripts or shaders have many errors), use the original game's binary as the export template.
+
+*******************************************************************************
+
